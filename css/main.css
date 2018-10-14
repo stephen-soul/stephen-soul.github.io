@@ -1,0 +1,173 @@
+body, html {
+    height: 100%;
+    font-size: 1em;
+    line-height: 1.9;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.w3-black {
+    background-color: #272727!important;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../img/keji3.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("../img/hali.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("../img/hali2.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("../img/evening.jpg");
+    min-height: 400px;
+}
+
+#csharp, #cplusplus, #java, #javascript, #jetbrains, #windows, #ubuntu, #android, #github{
+    font-size: 4em;
+}
+
+#firstParagraph {
+    padding-top: 5em;
+}
+
+#contactInfo {
+    text-align: center;
+    padding-right: 1em;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+    #about, #portfolio, #contact, #resumeSection {
+        color: white!important;
+        background-color: black!important;
+    }
+    #jsMaze, #jsMazeDocumentation, #androidMovies, #androidMoviesDocumentation, #cppMazeSolver, #cppMazeSolverDocumentation, #unityMan, #unityManDocumentation, #winformGame, #winformGameDocumentation, #resumeSection {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #resume {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    }
+}
+
+#mobileHero {
+    visibility: block;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+}
+
+nav {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#nav ul {
+
+    display: inline-block;
+}
+#nav ul li {
+
+    float:left;
+}
+
+ul {
+    list-style: none;
+}
+
+#nav li {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 5px;
+    float: left;
+    background: #fff;
+    line-height: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.nav ul {
+    display: inline-block;
+}
+
+#nav li .active {
+    background: #737373;
+    color: white;
+}
+
+#resumeDownload {
+    text-align: center;
+}
+
+#showcase6 {
+    margin-right: 38px;
+}
+
+#resumeHeader {
+    padding-bottom: 10px;
+}
+
+#jsMaze, #jsMazeDocumentation, #unityMan, #unityManDocumentation, #winformGame, #winformGameDocumentation, #androidMoviesDocumentation, #cppMazeSolverDocumentation, #resume {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cppMazeSolver {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#resumeContent, #resumeContentMobile {
+    padding-left: 30px;
+}
+
+#resumeSection li {
+    display: table-cell;
+    padding: 2px;
+}
+
+.resumeShowcase {
+    padding-right: 5px;
+}
+
+#androidMovies {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
