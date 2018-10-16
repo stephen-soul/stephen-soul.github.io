@@ -23,9 +23,17 @@ body, html {
     min-height: 100%;
 }
 
+.bgimg-1-mobile {
+    min-height: 100%;
+}
+
 /* Second image (Portfolio) */
 .bgimg-2 {
     background-image: url("../img/hali.jpg");
+    min-height: 400px;
+}
+
+.bgimg-2-mobile {
     min-height: 400px;
 }
 
@@ -35,8 +43,16 @@ body, html {
     min-height: 400px;
 }
 
+.bgimg-3-mobile {
+    min-height: 400px;
+}
+
 .bgimg-4 {
     background-image: url("../img/evening.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4-mobile {
     min-height: 400px;
 }
 
