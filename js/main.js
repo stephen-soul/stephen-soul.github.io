@@ -1,4 +1,6 @@
 
+// Array of project ids
+var projectNames = ["#jsMaze", "#jsMazeDocumentation", "#cppMazeSolver", "#cppMazeSolverDocumentation", "#androidMovies", "#androidMoviesDocumentation", "#unityMan", "#unityManDocumentation", "#winformGame", "#winformGameDocumentation"]
 // Modal Image Gallery
 function onClick(element) {
     document.getElementById("img01").src = element.src;
@@ -28,84 +30,48 @@ function toggleFunction() {
     }
 }
 
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
 (function($) {
     $('nav li').click(function() {
+        $('nav li').css("background", "white");
         if($(this).attr('class') === 'active') {
-            if(this.id === "showcase6") {
-                $(this).removeClass('active');
-                $("#resume").css("display", "none");
-            } else {
-                $(this).removeClass('active');
-                $("#jsMaze").css("display", "none");
-                $("#jsMazeDocumentation").css("display", "none");
-                $("#cppMazeSolver").css("display", "none");
-                $("#cppMazeSolverDocumentation").css("display", "none");
-                $("#androidMovies").css("display", "none");
-                $("#androidMoviesDocumentation").css("display", "none");
-                $("#unityMan").css("display", "none");
-                $("#unityManDocumentation").css("display", "none");
-                $("#winformGame").css("display", "none");
-                $("#winformGameDocumentation").css("display", "none");
+            $(this).removeClass('active');
+            for (let x = 0; x < projectNames.length; x++) {
+                $(projectNames[x]).css("display", "none");
+                $(projectNames[x]).css("background", "white");
             }
         } else {
+            $(this).css("background", "green");
             $(this).addClass('active').siblings('li').removeClass('active');
-            if (this.id === "showcase1") {
-                $("#jsMaze").css("display", "block");
-                $("#jsMazeDocumentation").css("display", "block");
-                $("#cppMazeSolver").css("display", "none");
-                $("#cppMazeSolverDocumentation").css("display", "none");
-                $("#androidMovies").css("display", "none");
-                $("#androidMoviesDocumentation").css("display", "none");
-                $("#unityMan").css("display", "none");
-                $("#unityManDocumentation").css("display", "none");
-                $("#winformGame").css("display", "none");
-                $("#winformGameDocumentation").css("display", "none");
-            } else if (this.id === "showcase2") {
-                $("#jsMaze").css("display", "none");
-                $("#jsMazeDocumentation").css("display", "none");
-                $("#cppMazeSolver").css("display", "block");
-                $("#cppMazeSolverDocumentation").css("display", "block");
-                $("#androidMovies").css("display", "none");
-                $("#androidMoviesDocumentation").css("display", "none");
-                $("#unityMan").css("display", "none");
-                $("#unityManDocumentation").css("display", "none");
-                $("#winformGame").css("display", "none");
-                $("#winformGameDocumentation").css("display", "none");
-            } else if (this.id === "showcase3") {
-                $("#jsMaze").css("display", "none");
-                $("#jsMazeDocumentation").css("display", "none");
-                $("#cppMazeSolver").css("display", "none");
-                $("#cppMazeSolverDocumentation").css("display", "none");
-                $("#androidMovies").css("display", "block");
-                $("#androidMoviesDocumentation").css("display", "block");
-                $("#unityMan").css("display", "none");
-                $("#unityManDocumentation").css("display", "none");
-                $("#winformGame").css("display", "none");
-                $("#winformGameDocumentation").css("display", "none");
-            } else if (this.id === "showcase4") {
-                $("#jsMaze").css("display", "none");
-                $("#jsMazeDocumentation").css("display", "none");
-                $("#cppMazeSolver").css("display", "none");
-                $("#cppMazeSolverDocumentation").css("display", "none");
-                $("#androidMovies").css("display", "none");
-                $("#androidMoviesDocumentation").css("display", "none");
-                $("#unityMan").css("display", "none");
-                $("#unityManDocumentation").css("display", "none");
-                $("#winformGame").css("display", "block");
-                $("#winformGameDocumentation").css("display", "block");
-            } else if (this.id === "showcase5") {
-                $("#jsMaze").css("display", "none");
-                $("#jsMazeDocumentation").css("display", "none");
-                $("#cppMazeSolver").css("display", "none");
-                $("#cppMazeSolverDocumentation").css("display", "none");
-                $("#androidMovies").css("display", "none");
-                $("#androidMoviesDocumentation").css("display", "none");
-                $("#unityMan").css("display", "block");
-                $("#unityManDocumentation").css("display", "block");
-                $("#winformGame").css("display", "none");
-                $("#winformGameDocumentation").css("display", "none");
-            } else if (this.id === "showcase6") {
-                $("#resume").css("display", "block");
+            var idToShow
+            switch(this.id) {
+                case "showcase1":
+                    idToShow = "jsMaze";
+                    break;
+                case "showcase2":
+                    idToShow = "cppMaze";
+                    break;
+                case "showcase3":
+                    idToShow = "androidMovies";
+                    break;
+                case "showcase4":
+                    idToShow = "unityMan";
+                    break;
+                case "showcase5":
+                    idToShow = "winform";
+                    break;
+                default:
+                    break;
+            }
+            var re = new RegExp(idToShow);
+            for (let x = 0; x < projectNames.length; x++) {
+                re.test(""+projectNames[x]) ? $(projectNames[x]).css("display", "block") : $(projectNames[x]).css("display", "none");
             }
         }
     });
