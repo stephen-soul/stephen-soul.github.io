@@ -90,7 +90,7 @@ body, html {
         color: white!important;
         background-color: black!important;
     }
-    #jsMaze, #jsMazeDocumentation, #androidMovies, #androidMoviesDocumentation, #cppMazeSolver, #cppMazeSolverDocumentation, #unityMan, #unityManDocumentation, #winformGame, #winformGameDocumentation, #resumeSection {
+    #jsMaze, #jsMazeDocumentation, #androidMovies, #androidMoviesDocumentation, #cppMazeSolver, #cppMazeSolverDocumentation, #unityMan, #unityManDocumentation, #winformGame, #winformGameDocumentation, #resumeSection, #godot, #godotDocumentation, #task, #taskDocumentation {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -165,7 +165,7 @@ ul {
     padding-bottom: 10px;
 }
 
-#jsMaze, #jsMazeDocumentation, #unityMan, #unityManDocumentation, #winformGame, #winformGameDocumentation, #androidMoviesDocumentation, #cppMazeSolverDocumentation, #resume {
+#jsMaze, #jsMazeDocumentation, #unityMan, #unityManDocumentation, #winformGame, #winformGameDocumentation, #androidMoviesDocumentation, #cppMazeSolverDocumentation, #godot, #godotDocumentation, #taskApp, #taskAppDocumentation {
     display: none;
     margin-left: auto;
     margin-right: auto;
@@ -197,3 +197,22 @@ ul {
     margin-right: auto;
     width: 40%;
 }
+
+.iframe-container{
+    margin: 0 auto;
+    max-width:100%;
+    width:500px;
+    height:300px;
+    }
+    @media only screen and (max-width: 992px) {
+        .iframe-container{
+            width: 80%;
+            height:400px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+       .iframe-container{
+            width: 100%;
+            height:500px;
+        }
+    }

@@ -1,6 +1,6 @@
 
 // Array of project ids
-var projectNames = ["#jsMaze", "#jsMazeDocumentation", "#cppMazeSolver", "#cppMazeSolverDocumentation", "#androidMovies", "#androidMoviesDocumentation", "#unityMan", "#unityManDocumentation", "#winformGame", "#winformGameDocumentation"]
+var projectNames = ["#jsMaze", "#jsMazeDocumentation", "#cppMazeSolver", "#cppMazeSolverDocumentation", "#androidMovies", "#androidMoviesDocumentation", "#unityMan", "#unityManDocumentation", "#winformGame", "#winformGameDocumentation", "#godot", "#godotDocumentation", "#taskApp", "#taskAppDocumentation"]
 // Modal Image Gallery
 function onClick(element) {
     document.getElementById("img01").src = element.src;
@@ -67,10 +67,10 @@ function w3_close() {
                     idToShow = "unityMan";
                     break;
                 case "showcase6":
-                    idToShow = "unityMan";
+                    idToShow = "godot";
                     break;
                 case "showcase7":
-                    idToShow = "unityMan";
+                    idToShow = "taskApp";
                     break;
                 default:
                     break;
@@ -78,6 +78,7 @@ function w3_close() {
             var re = new RegExp(idToShow);
             for (let x = 0; x < projectNames.length; x++) {
                 re.test(""+projectNames[x]) ? $(projectNames[x]).css("display", "block") : $(projectNames[x]).css("display", "none");
+                console.log(projectNames[x]);
             }
         }
     });
