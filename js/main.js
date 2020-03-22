@@ -44,7 +44,7 @@ function w3_close() {
             $(this).removeClass('active');
             for (let x = 0; x < projectNames.length; x++) {
                 $(projectNames[x]).css("display", "none");
-                $(projectNames[x]).css("background", "white");
+                //$(projectNames[x]).css("background", "white");
             }
         } else {
             $(this).css("background", "green");
@@ -61,10 +61,16 @@ function w3_close() {
                     idToShow = "androidMovies";
                     break;
                 case "showcase4":
-                    idToShow = "unityMan";
+                    idToShow = "winform";
                     break;
                 case "showcase5":
-                    idToShow = "winform";
+                    idToShow = "unityMan";
+                    break;
+                case "showcase6":
+                    idToShow = "unityMan";
+                    break;
+                case "showcase7":
+                    idToShow = "unityMan";
                     break;
                 default:
                     break;

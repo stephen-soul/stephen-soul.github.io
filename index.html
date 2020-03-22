@@ -1,382 +1,386 @@
 <!DOCTYPE html>
-<html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Stephen Fetinko&#39;s Portfolio</title>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1"></p>
-<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/darkly/bootstrap.min.css" integrity="sha384-novkfxI48G9YvcamVHf01KL+Sm6JFherxeJKqUdbez8EoEsAued2k/cD43lYG+B1" rel="stylesheet" />
-<link href="css/main.css" rel="stylesheet" />
-<link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Stephen Fetinko&#39;s Portfolio</title>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"></p>
+	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/darkly/bootstrap.min.css" integrity="sha384-novkfxI48G9YvcamVHf01KL+Sm6JFherxeJKqUdbez8EoEsAued2k/cD43lYG+B1" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-<div class="w3-bar" id="myNavbar">
-	<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-		<i class="fa fa-bars"></i>
-	</a>
-	<a class="w3-bar-item w3-button" href="#home">HOME</a>
-	<a class="w3-bar-item w3-button w3-hide-small" href="#about"> ABOUT</a> 
-	<a class="w3-bar-item w3-button w3-hide-small" href="#portfolio"> PORTFOLIO</a>
-	<a class="w3-bar-item w3-button w3-hide-small" href="#resumeSection"> RESUME</a>
-	<a class="w3-bar-item w3-button w3-hide-small" href="#contact"> CONTACT</a>
-</div>
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar" id="myNavbar">
+			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a class="w3-bar-item w3-button" href="#home">HOME</a>
+			<a class="w3-bar-item w3-button w3-hide-small" href="#about"> ABOUT</a> 
+			<a class="w3-bar-item w3-button w3-hide-small" href="#portfolio"> PORTFOLIO</a>
+			<a class="w3-bar-item w3-button w3-hide-small" href="#resumeSection"> RESUME</a>
+			<a class="w3-bar-item w3-button w3-hide-small" href="#contact"> CONTACT</a>
+		</div>
 
-<!-- Navbar on small screens -->
-<div class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" id="navDemo">
-	<a class="w3-bar-item w3-button w3-black" href="#about" onclick="toggleFunction()">ABOUT</a>
-	<a class="w3-bar-item w3-button w3-black" href="#portfolio" onclick="toggleFunction()">PORTFOLIO</a>
-	<a class="w3-bar-item w3-button w3-black" href="#resumeSection" onclick="toggleFunction()">RESUME</a>
-	<a class="w3-bar-item w3-button w3-black" href="#contact" onclick="toggleFunction()">CONTACT</a></div>
-</div>
+		<!-- Navbar on small screens -->
+		<div class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+			<a class="w3-bar-item w3-button w3-black" href="#about" onclick="toggleFunction()">ABOUT</a>
+			<a class="w3-bar-item w3-button w3-black" href="#portfolio" onclick="toggleFunction()">PORTFOLIO</a>
+			<a class="w3-bar-item w3-button w3-black" href="#resumeSection" onclick="toggleFunction()">RESUME</a>
+			<a class="w3-bar-item w3-button w3-black" href="#contact" onclick="toggleFunction()">CONTACT</a></div>
+		</div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min w3-hide-small" id="home">
-	<div class="w3-display-middle w3-hide-small" style="white-space:nowrap;">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" id="heroLogo">It&#39;s a pleasure to meet you.</span>
+		<!-- First Parallax Image with Logo Text -->
+		<div class="bgimg-1 w3-display-container w3-opacity-min w3-hide-small" id="home">
+			<div class="w3-display-middle w3-hide-small" style="white-space:nowrap;">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" id="heroLogo">It&#39;s a pleasure to meet you.</span>
+			</div>
+		</div>
+
+		<div class="bgimg-1-mobile w3-cyan w3-display-container w3-opacity-min w3-hide-large w3-hide-medium" id="home">
+			<div class="w3-display-middle w3-hide-large w3-hide-medium" style="white-space:nowrap;">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Welcome</span>
+			</div>
+		</div>
+
+		<!-- Container (About Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="about">
+		<h3 class="w3-center">ABOUT ME</h3>
+
+		<p class="w3-center"><em>I&#39;m A Software Developer</em></p>
+
+		<p>
+			My name is Stephen Fetinko and I&#39;m a software developer graduate of NSCC with a diploma in Programming. 
+			Programming for me has always been a passion of mine. It started from playing around with HTML to edit home pages, 
+			and eventually it led me to learning more about the games I loved and how they were made. My passion had fuel added 
+			to the fire at the end of high school when I took a class that delved into Java and from there, I pursued learning 
+			everything possible about making anything from desktop/mobile development to game development.
+		</p>
+
+		<div class="w3-row">
+		<div class="w3-col m6 w3-center w3-padding-large">
+		<br/><br/><br/><p><b>Stephen Fetinko</b></p>
+
+		<p></p>
+
+		<p></p>
+
+		<p><br />
+		<img alt="Photo of Me" class="w3-round w3-image " height="333" src="img/me.jpg" width="500" /></p>
+		</div>
+			<!-- Hide this text on small devices -->
+
+			<div class="w3-col m6 w3-hide-small w3-padding-large">
+			<p id="firstParagraph">Finding out how the world ticks is something that has always interested me and figuring out complicated puzzles is always an enjoyable experience. There&#39;s not a whole lot more that can be said about me. I code a lot, I build computers and I drink a bunch of coffee. But I&#39;m a hard worker who never leaves a task undone, and I make sure that when I&#39;m on a team I do everything possible to make everybody&#39;s job easier. I love learning new things and if I find a website that&#39;s done a certain way or an application that&#39;s done a unique way then I go out of my way to ensure I figure out how it works so I can learn more and constantly improve. As an example, this site was built off of a <a href="https://www.w3schools.com/w3css/w3css_templates.asp">W3.CSS Template</a> with a <a href="https://bootswatch.com/">bootswatch</a> theme that I worked to customize and make my own.</p>
+			&nbsp;
+
+			<p>My programming career has been and will be a journey. I&#39;ve learned an incredible amount from my teachers and my peers and I look forward to learning more and more about how the world works. At the end of the day, I&#39;m a software developer, and it&#39;s a pleasure to meet you.</p>
+		</div>
 	</div>
-</div>
 
-<div class="bgimg-1-mobile w3-cyan w3-display-container w3-opacity-min w3-hide-large w3-hide-medium" id="home">
-	<div class="w3-display-middle w3-hide-large w3-hide-medium" style="white-space:nowrap;">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Welcome</span>
+	<p class="w3-large w3-center w3-padding-16">What I Use Most</p>
+	<p class="w3-wide w3-center w3-padding-16">
+	<i id="csharp" class="devicon-csharp-plain" title="C#"></i>
+	<i class="devicon-cplusplus-plain" id="cplusplus" title="C++"></i>
+	<i class="devicon-java-plain" id="java" title="Java"></i>
+	<i class="devicon-javascript-plain" id="javascript" title="Javascript"></i>
+	<i class="devicon-jetbrains-plain" id="jetbrains" title="Jetbrains"></i>
+	<i class="devicon-windows8-original" id="windows" title="Windows"></i>
+	<i class="devicon-ubuntu-plain" id="ubuntu" title="Ubuntu"></i>
+	<i class="devicon-android-plain" id="android" title="Android"></i>
+	<i class="devicon-github-plain-wordmark" id="github" title="Github"></i>
+	</p>
+	<p class="w3-wide w3-center w3-padding-16"></p>
+	<!--<div class="w3-light-grey">--><!--<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>--><!--</div>--><!--<div class="w3-light-grey">--><!--<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>--><!--</div>--><!--<p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>--><!--<div class="w3-light-grey">--><!--<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>--><!--</div>--></div>
+	<!--<div class="w3-row w3-center w3-dark-grey w3-padding-16">--><!--<div class="w3-quarter w3-section">--><!--<span class="w3-xlarge">14+</span><br>--><!--Partners--><!--</div>--><!--<div class="w3-quarter w3-section">--><!--<span class="w3-xlarge">55+</span><br>--><!--Projects Done--><!--</div>--><!--<div class="w3-quarter w3-section">--><!--<span class="w3-xlarge">89+</span><br>--><!--Happy Clients--><!--</div>--><!--<div class="w3-quarter w3-section">--><!--<span class="w3-xlarge">150+</span><br>--><!--Meetings--><!--</div>--><!--</div>--><!-- Second Parallax Image with Portfolio Text -->
+
+	<div class="bgimg-2 w3-display-container w3-opacity-min w3-hide-small">
+		<div class="w3-display-middle">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">PORTFOLIO</span>
+		</div>
 	</div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-<h3 class="w3-center">ABOUT ME</h3>
-
-<p class="w3-center"><em>I&#39;m A Software Developer</em></p>
-
-<p>
-	My name is Stephen Fetinko and I&#39;m a software developer graduate of NSCC with a diploma in Programming. 
-	Programming for me has always been a passion of mine. It started from playing around with HTML to edit home pages, 
-	and eventually it led me to learning more about the games I loved and how they were made. My passion had fuel added 
-	to the fire at the end of high school when I took a class that delved into Java and from there, I pursued learning 
-	everything possible about making anything from desktop/mobile development to game development.
-</p>
-
-<div class="w3-row">
-<div class="w3-col m6 w3-center w3-padding-large">
-<br/><br/><br/><p><b>Stephen Fetinko</b></p>
-
-<p></p>
-
-<p></p>
-
-<p><br />
-<img alt="Photo of Me" class="w3-round w3-image " height="333" src="img/me.jpg" width="500" /></p>
-</div>
-<!-- Hide this text on small devices -->
-
-<div class="w3-col m6 w3-hide-small w3-padding-large">
-<p id="firstParagraph">Finding out how the world ticks is something that has always interested me and figuring out complicated puzzles is always an enjoyable experience. There&#39;s not a whole lot more that can be said about me. I code a lot, I build computers and I drink a bunch of coffee. But I&#39;m a hard worker who never leaves a task undone, and I make sure that when I&#39;m on a team I do everything possible to make everybody&#39;s job easier. I love learning new things and if I find a website that&#39;s done a certain way or an application that&#39;s done a unique way then I go out of my way to ensure I figure out how it works so I can learn more and constantly improve. As an example, this site was built off of a <a href="https://www.w3schools.com/w3css/w3css_templates.asp">W3.CSS Template</a> with a <a href="https://bootswatch.com/">bootswatch</a> theme that I worked to customize and make my own.</p>
-&nbsp;
-
-<p>My programming career has been and will be a journey. I&#39;ve learned an incredible amount from my teachers and my peers and I look forward to learning more and more about how the world works. At the end of the day, I&#39;m a software developer, and it&#39;s a pleasure to meet you.</p>
-</div>
-</div>
-
-<p class="w3-large w3-center w3-padding-16">What I Use Most</p>
-<p class="w3-wide w3-center w3-padding-16">
-<i id="csharp" class="devicon-csharp-plain" title="C#"></i>
-<i class="devicon-cplusplus-plain" id="cplusplus" title="C++"></i>
-<i class="devicon-java-plain" id="java" title="Java"></i>
-<i class="devicon-javascript-plain" id="javascript" title="Javascript"></i>
-<i class="devicon-jetbrains-plain" id="jetbrains" title="Jetbrains"></i>
-<i class="devicon-windows8-original" id="windows" title="Windows"></i>
-<i class="devicon-ubuntu-plain" id="ubuntu" title="Ubuntu"></i>
-<i class="devicon-android-plain" id="android" title="Android"></i>
-<i class="devicon-github-plain-wordmark" id="github" title="Github"></i>
-</p>
-<p class="w3-wide w3-center w3-padding-16"></p>
-<!--<div class="w3-light-grey">--><!--<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>--><!--</div>--><!--<div class="w3-light-grey">--><!--<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>--><!--</div>--><!--<p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>--><!--<div class="w3-light-grey">--><!--<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>--><!--</div>--></div>
-<!--<div class="w3-row w3-center w3-dark-grey w3-padding-16">--><!--<div class="w3-quarter w3-section">--><!--<span class="w3-xlarge">14+</span><br>--><!--Partners--><!--</div>--><!--<div class="w3-quarter w3-section">--><!--<span class="w3-xlarge">55+</span><br>--><!--Projects Done--><!--</div>--><!--<div class="w3-quarter w3-section">--><!--<span class="w3-xlarge">89+</span><br>--><!--Happy Clients--><!--</div>--><!--<div class="w3-quarter w3-section">--><!--<span class="w3-xlarge">150+</span><br>--><!--Meetings--><!--</div>--><!--</div>--><!-- Second Parallax Image with Portfolio Text -->
-
-<div class="bgimg-2 w3-display-container w3-opacity-min w3-hide-small">
-	<div class="w3-display-middle">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">PORTFOLIO</span>
+	<div class="bgimg-2-mobile w3-teal w3-display-container w3-opacity-min w3-hide-medium w3-hide-large">
+		<div class="w3-display-middle">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">PORTFOLIO</span>
+		</div>
 	</div>
-</div>
-<div class="bgimg-2-mobile w3-teal w3-display-container w3-opacity-min w3-hide-medium w3-hide-large">
-	<div class="w3-display-middle">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">PORTFOLIO</span>
+	<!-- Container (Portfolio Section) -->
+
+	<div class="w3-content w3-container w3-padding-64" id="portfolio">
+		<h3 class="w3-center">SOME OF MY PROJECTS</h3>
+
+		<p class="w3-center"><em>Here&#39;s some of my projects. Click on an item to view some information on it!<br />
+		For the rest of my projects, check out my project <a href="projects.html">page</a>!</em></p>
+		<br />
+		<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+		<div class="w3-center"><!--<div class="w3-col m3">--><!--<img src="img/maze.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maze game in Javascript and HTML with a randomly generated maze.">--><!--<p>Javascript Maze</p>--><!--</div>--><!--<div class="w3-col m3">--><!--<img src="img/mazesolver.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maze solver in C++. Takes a maze from a txt file into a 2D string array that it then solves using stacks.">--><!--<p>C++ Maze Solver. Code provided on request</p>--><!--</div>--><!--<div class="w3-col m3">--><!--<img src="img/movieapp.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Android application to store movie trailers from YouTube in a SQLite database, along with names, descriptions and ratings.">--><!--<p>Android Movie Trailer. Code found <a href="https://github.com/stephen-soul/Android-Studio-Projects/tree/master/MovieTrails%20-%20Final%20Attempt">here</a></p>--><!--</div>--><!--&lt;!&ndash;Replace this with a C# assignment to showcase the 4 languages listed above&ndash;&gt;--><!--<div class="w3-col m3">--><!--<img src="img/weatherapp.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Weather app made in Javascript and HTML. Enter in a city and a state/province and it handles it with a Yahoo XML request to return a 3 day forecast.">--><!--<p>Javascript 3 Day Weather Forecast</p>--><!--</div>-->
+			<nav id="nav">
+				<h4>Projects from school</h4>
+				<ul class="noselect">
+					<li data-rel="1" id="showcase1">Javascript Maze</li>
+					<li data-rel="2" id="showcase2">C++ Maze Solver</li>
+					<li data-rel="3" id="showcase3">Android Movie Trailer</li>
+					<li data-rel="4" id="showcase4">Windows Form Game</li>
+					<li data-rel="5" id="showcase5">Pacman in Unity</li>
+				</ul>
+				<h4>Projects during free time</h4>
+				<div class="w3-center">
+					<ul class="noselect" >
+						<li data-rel="6" id="showcase6">Godot Project</li>
+						<li data-rel="6" id="showcase6">Task</li>
+					</ul>
+				</div>
+			</nav>
+			<img alt="Maze game in Javascript and HTML with a randomly generated maze." class="w3-center" id="jsMaze" src="img/maze.png" />
+			<div id="jsMazeDocumentation">
+				<p class="w3-center">Code provided on request</p>
+
+				<h3>Summary of the project?</h3>
+
+				<p>A maze made in Javascript. Starts with an intro screen that asks for a name and a submit button. The name gets stored in session and as long as it&#39;s not empty or 2 or less characters, you will be taken to the actual game page.</p>
+
+				<h3>What&#39;s the goal?</h3>
+
+				<p>Once playing, you&#39;ll be at the screen pictured above. You then have the option to move with the arrow keys, WASD or on screen buttons. The idea is that you are a monkey and you are tasked with finding the banana.</p>
+
+				<h3>What&#39;s the challenge?</h3>
+
+				<p>The goal is to get to the end of the maze. The challenge is that the maze is randomly generated every time, and it&#39;s not always super easy. The randomness of the maze was generated from a tutorial but everything else was coded to make a game out of this.</p>
+
+				<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
+
+				<p>Coming from Java and C++ before dipping into Javascript, I had a few issues getting the hang of how Javascript was written. Aside from the language barrier, my only coding issues were with the form on submit. The other issue I found was cookies caching and changes not applying. The form submit was an issue because I was validating through Javascript and the issue was fixed by instead of the button doing the submitting, I had my actual form have an on submit. After those minor issues and the languages differences I ended up finding my own way to code the game portion and everything came after that. This helped me learn a little more about javascript and because it was game focused, it made the process a lot more fun and a lot easier for me.</p>
+			</div>
+			<img alt="Maze solver in C++. Takes a maze from a txt file into a 2D string array that it then solves using stacks." id="cppMazeSolver" src="img/mazesolver.png" />
+			<div id="cppMazeSolverDocumentation">
+				<p class="w3-center">Code provided on request</p>
+
+				<h3>Summary of the project?</h3>
+
+				<p>A maze solver made in C++. The program takes in a maze through a text file, dumps it into a dynamic array, and then solves it using stacks. The dynamic array (not a vector) is done a little wacky, but it works. The idea originally was to make an array of strings. My implementation ended up using an array of strings without implementing strings. The result, because strings in C++ are an array of chars, was an array of chars of chars. It wasn&#39;t the goal but it fit the style and it solved it.</p>
+
+				<h3>What&#39;s the goal?</h3>
+
+				<p>Specifically, select a maze made in a text file from the debug folder through an on screen console based menu. Then the program will then store each step done in a stack and make the needed moves. When it makes progress, leave an X, when it goes back, remove the X.</p>
+
+				<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
+
+				<p>The only challenge I found I ended up putting on myself. I didn&#39;t intend to make the array of chars of chars and doing so certainly provided interesting challenges. Most notable was the maze only solving so much before I ended up with a segfault error. But that was a mix of how I made the array and how I handled the win condition. After checking for a win before anything else, everything worked just fine. This was my first real look into using stacks, specifically, and because this was done at the same time as the javascript maze, I was just happy to be done with mazes. But it helped me learn a little more about C++ and although I did some things a little weirder than I should have, it has helped me manage C++ a lot more than I could beforehand.</p>
+			</div>
+			<img alt="Android application to store movie trailers" class="w3-center" id="androidMovies" src="img/movieapp.png" />
+			<div id="androidMoviesDocumentation">
+				<p class="w3-center">Code provided on request</p>
+
+				<h3>Summary of the project?</h3>
+
+				<p>An Android application meant to allow the user to store videos from YouTube locally on their smart device, and store the saved links in a sqlite database.</p>
+
+				<h3>What&#39;s the goal?</h3>
+
+				<p>The goal was to make an application that could utilize the YouTube api to store videos locally. The way this application works is by letting the user enter a name of a video, add a url, a rating and a description. The way the video works is by having the user go to the mobile YouTube app, find a video, and specifically go to share and then copy the url. That reason you copy that specific url is because of the way the app splits the string. From there, it can get the embedded YouTube video to load the video and have all the functionality of YouTube, all while your links are stored in a sqlite database that you can add or delete from at any time.</p>
+
+				<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
+
+				<p>This project was a real interesting journey. At this point of time I had only ever made smaller apps, specifically for Magic The Gathering to track your life, and played around with changing colours. This app had the new challenge of figuring out how sqlite worked in Android and how to use the YouTube api. Sqlite wasn&#39;t a challenge, but getting string values into the database did provide some complications just because it was my first time using databases in Android. The YouTube api was another issue. I needed to read a ton of documentation and even then it just didn&#39;t want to work. Eventually I found the specific way it wanted the string and the api key and from there, everything fell in place. I managed to learn a lot more about Android because of this project and as soon as it was done it opened up a lot more application ideas that I&#39;m able to make, specifically utilizing sqlite databases.</p>
+			</div>
+			<img alt="Space invaders style Windows Forms game" id="winformGame" src="img/bullethell.png" />
+			<div id="winformGameDocumentation">
+				<p class="w3-center">Code provided on request</p>
+
+				<h3>Summary of the project?</h3>
+
+				<p>A bullet hell style game made in Windows Forms with GDI+. One life, bunch of bullets, survive all the waves of enemies.</p>
+
+				<h3>What&#39;s the goal?</h3>
+
+				<p>The goal of the game is to survive 3 waves of enemies and then a boss wave. You only have the one life, and enemies take a bunch of shots to kill.</p>
+
+				<h3>What&#39;s the challenge?</h3>
+
+				<p>The goal is to kill all the enemies. The challenge is that each wave gets faster each time, and each wave has a hive mind. They all shoot at the same time, and because you only have one life, things will get more intense than previously thought. You will die very quick if you&#39;re not paying attention. Each death will restart the game.</p>
+
+				<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
+
+				<p>This kind of thing is my passion. Making games has always been my favourite thing. This was my first take on taking on the Windows Forms, and making a game out of it was a lot of fun, but it wasn&#39;t without its challenges. The issues that are noteworthy were waves that would vanish all at once, enemies that would die all at once, and key presses causing some unneeded issues. When it came to the waves vanishing it was just down to how I was handling waves, and tracking each wave individually fixed that. The issue with bullets was because bullets were done in a hash set, and because the damage was based on the amount of bullets in the hash set. I managed a quick and dirty solution to change the health of the enemies and limiting the bullets to get my initial idea. When it came to the key press issues, it was due to a key down event. The way that my movement worked was on a separate timer. The way my shooting worked was not the same as the movement, which I had set up to make movement smoother. The issue with the way shooting worked was that it would only shoot fast if I wasn&#39;t moving, and then it would spam shots, and then stop if I was moving. I changed the shooting to shoot on key up which limited the speed of shots and made everything work as intended. This project proved a lot more fun than I had originally thought and it helped bring out my game design brain.</p>
+			</div>
+			<img alt="Pacman made in Unity" id="unityMan" src="img/pacboard.PNG" />
+			<div id="unityManDocumentation">
+				<p class="w3-center">Code on GitHub is in progress</p>
+
+				<h3>Summary of the project?</h3>
+
+				<p>Pacman made in Unity, that I&#39;ve dubbed Unityman, made through a tutorial with my own touches added on at the end (tutorial I based this off of was located <a href="https://noobtuts.com/unity/2d-pacman-game">here</a>.)</p>
+
+				<h3>What&#39;s the goal?</h3>
+
+				<p>The goal is to remake one of the most iconic games, Pacman, and add my own touches to make it look a little more my own.</p>
+
+				<h3>What&#39;s the challenge?</h3>
+
+				<p>It&#39;s Pacman, which can be a challenge all on its own for some. But it&#39;s also made with a little easier AI that is also faster than need be. The AI&#39;s patterns are also harder to memorize and they can catch you off guard.</p>
+
+				<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
+
+				<p>Following along with the tutorial walked me through my first delve into Unity as a game engine. As an engine, it&#39;s a lot of fun and easy enough to work with. But also as an engine, there were a few things I did through the tutorial that took a long time. Taking a look at the map, I ended up having to add the colliders all manually. Colliders in Unity are just something that tells the program where collisions can be found. They define the shape, or at least a rough approximation, and are invisible to the player while playing. They are essential for telling where the map is and where each wall is. Setting up all 51 manually caused some issues, specifically with movement.</p>
+
+				<p>The colliders need to be roughly even numbers and not decimals that extend in length. So having one be 1.25 is far better than having one that&#39;s 1.2548545 because that was how my original setup was. And every play test had me randomly sticking to the wall as it was velcro, and in one instance, had me sucked into the wall like the corner was a black hole. Another challenge faced could be the pacdots. Each individual pacdot. You don&#39;t need to count as I had to manually add all 328 duplicating the last, editing the size to make it next to the last, and slowly make my way through the maze. But it was a lot of fun as much as it was a challenge. Speaking of pacdots, I did run into an issue where every pacdot would randomly disappear for seemingly no reason, but that boiled down to me grouping every pacdot under the first instead of the board during a cleanup. But past that, no other issues really came to be.</p>
+
+				<p>After the tutorial concluded I was left with Pacman, 51 colliders, 328 pacdots, and one ghost. But it did provide a basis for me to add a scoreboard and a game over/win. From there I looked into the documents for Unity and the Unity forms to figure out how to add the score, how to pause a game for when the user wins or loses, and how to restart upon win or loss. At the end, I had a lot of fun with the project and it taught me a lot about Unity as an engine and really solidified making games as my end goal.</p>
+			</div>
+		</div>
 	</div>
-</div>
-<!-- Container (Portfolio Section) -->
+	<!-- Third Parallax Image with Portfolio Text -->
 
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-<h3 class="w3-center">SOME OF MY PROJECTS</h3>
+	<div class="bgimg-4 w3-display-container w3-opacity-min w3-hide-small">
+		<div class="w3-display-middle">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">RESUME</span>
+		</div>
+	</div>
+	<div class="bgimg-4-mobile w3-orange w3-display-container w3-opacity-min w3-hide-medium w3-hide-large">
+		<div class="w3-display-middle">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">RESUME</span>
+		</div>
+	</div>
+	<!-- Container (Contact Section) -->
 
-<p class="w3-center"><em>Here&#39;s some of my projects. Click on an item to view some information on it!<br />
-For the rest of my projects, check out my project <a href="projects.html">page</a>!</em></p>
-<br />
-<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-<div class=" w3-center w3-content"><!--<div class="w3-col m3">--><!--<img src="img/maze.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maze game in Javascript and HTML with a randomly generated maze.">--><!--<p>Javascript Maze</p>--><!--</div>--><!--<div class="w3-col m3">--><!--<img src="img/mazesolver.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maze solver in C++. Takes a maze from a txt file into a 2D string array that it then solves using stacks.">--><!--<p>C++ Maze Solver. Code provided on request</p>--><!--</div>--><!--<div class="w3-col m3">--><!--<img src="img/movieapp.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Android application to store movie trailers from YouTube in a SQLite database, along with names, descriptions and ratings.">--><!--<p>Android Movie Trailer. Code found <a href="https://github.com/stephen-soul/Android-Studio-Projects/tree/master/MovieTrails%20-%20Final%20Attempt">here</a></p>--><!--</div>--><!--&lt;!&ndash;Replace this with a C# assignment to showcase the 4 languages listed above&ndash;&gt;--><!--<div class="w3-col m3">--><!--<img src="img/weatherapp.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Weather app made in Javascript and HTML. Enter in a city and a state/province and it handles it with a Yahoo XML request to return a 3 day forecast.">--><!--<p>Javascript 3 Day Weather Forecast</p>--><!--</div>-->
-<nav id="nav">
-	<ul class="noselect">
-		<li data-rel="1" id="showcase1" name="jsMaze">Javascript Maze</li>
-		<li data-rel="2" id="showcase2">C++ Maze Solver</li>
-		<li data-rel="3" id="showcase3">Android Movie Trailer</li>
-		<li data-rel="4" id="showcase4">Windows Form Game</li>
-		<li data-rel="5" id="showcase5">Pacman in Unity</li>
-		<li data-rel="6" id="showcase6">Untitled Game in Godot</li>
+	<div class="w3-content w3-container w3-padding-64" id="resumeSection">
+		<h3 class="w3-center" id="resumeHeader">HERE&#39;S MY RESUME</h3>
+	<div class="w3-hide-small" id="resumeContent">
+	<h2>Technical Skills</h2>
+
+	<p>Operating Systems:</p>
+
+	<ul id="resumeList">
+		<li>&middot; Windows (All versions)</li> 
+		<li>&middot; Linux (Debian/Manjaro)</li>
 	</ul>
-</nav>
-<img alt="Maze game in Javascript and HTML with a randomly generated maze." class="w3-center" id="jsMaze" src="img/maze.png" />
-<div id="jsMazeDocumentation">
-	<p class="w3-center">Code provided on request</p>
 
-	<h3>Summary of the project?</h3>
+	<p>Development Languages:</p>
 
-	<p>A maze made in Javascript. Starts with an intro screen that asks for a name and a submit button. The name gets stored in session and as long as it&#39;s not empty or 2 or less characters, you will be taken to the actual game page.</p>
+	<ul id="resumeList">
+		<li>&middot; Java</li>
+		<li>&middot; HTML</li>
+		<li>&middot; Python</li>
+		<li>&middot; C#</li>
+		<li>&middot; C++</li>
+		<li>&middot; JavaScript</li>
+		<li>&middot; GDScript</li>
+	</ul>
 
-	<h3>What&#39;s the goal?</h3>
+	<p>Development Tools:</p>
 
-	<p>Once playing, you&#39;ll be at the screen pictured above. You then have the option to move with the arrow keys, WASD or on screen buttons. The idea is that you are a monkey and you are tasked with finding the banana.</p>
+	<ul id="resumeList">
+		<li>&middot; Unity</li>
+		<li>&middot; Eclipse</li>
+		<li>&middot; Notepad++</li>
+		<li>&middot; WebStorm</li>
+		<li>&middot; IntelliJ</li>
+		<li>&middot; CLion</li>
+		<li>&middot; Godot Game Engine</li>
+	</ul>
 
-	<h3>What&#39;s the challenge?</h3>
+	<h2>Formal Education</h2>
 
-	<p>The goal is to get to the end of the maze. The challenge is that the maze is randomly generated every time, and it&#39;s not always super easy. The randomness of the maze was generated from a tutorial but everything else was coded to make a game out of this.</p>
+	<p>NSCC</p>
 
-	<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
+	<p><em>Diploma in Software Development</em></p>
 
-	<p>Coming from Java and C++ before dipping into Javascript, I had a few issues getting the hang of how Javascript was written. Aside from the language barrier, my only coding issues were with the form on submit. The other issue I found was cookies caching and changes not applying. The form submit was an issue because I was validating through Javascript and the issue was fixed by instead of the button doing the submitting, I had my actual form have an on submit. After those minor issues and the languages differences I ended up finding my own way to code the game portion and everything came after that. This helped me learn a little more about javascript and because it was game focused, it made the process a lot more fun and a lot easier for me.</p>
-</div>
-<img alt="Maze solver in C++. Takes a maze from a txt file into a 2D string array that it then solves using stacks." id="cppMazeSolver" src="img/mazesolver.png" />
-<div id="cppMazeSolverDocumentation">
-<p class="w3-center">Code provided on request</p>
+	<h2>Current Employment</h2>
 
-<h3>Summary of the project?</h3>
+	<p>NTT DATA</p>
 
-<p>A maze solver made in C++. The program takes in a maze through a text file, dumps it into a dynamic array, and then solves it using stacks. The dynamic array (not a vector) is done a little wacky, but it works. The idea originally was to make an array of strings. My implementation ended up using an array of strings without implementing strings. The result, because strings in C++ are an array of chars, was an array of chars of chars. It wasn&#39;t the goal but it fit the style and it solved it.</p>
+	<p><em>Software Development Analyst</em></p>
 
-<h3>What&#39;s the goal?</h3>
-
-<p>Specifically, select a maze made in a text file from the debug folder through an on screen console based menu. Then the program will then store each step done in a stack and make the needed moves. When it makes progress, leave an X, when it goes back, remove the X.</p>
-
-<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
-
-<p>The only challenge I found I ended up putting on myself. I didn&#39;t intend to make the array of chars of chars and doing so certainly provided interesting challenges. Most notable was the maze only solving so much before I ended up with a segfault error. But that was a mix of how I made the array and how I handled the win condition. After checking for a win before anything else, everything worked just fine. This was my first real look into using stacks, specifically, and because this was done at the same time as the javascript maze, I was just happy to be done with mazes. But it helped me learn a little more about C++ and although I did some things a little weirder than I should have, it has helped me manage C++ a lot more than I could beforehand.</p>
-</div>
-<img alt="Android application to store movie trailers" class="w3-center" id="androidMovies" src="img/movieapp.png" />
-<div id="androidMoviesDocumentation">
-<p class="w3-center">Code provided on request</p>
-
-<h3>Summary of the project?</h3>
-
-<p>An Android application meant to allow the user to store videos from YouTube locally on their smart device, and store the saved links in a sqlite database.</p>
-
-<h3>What&#39;s the goal?</h3>
-
-<p>The goal was to make an application that could utilize the YouTube api to store videos locally. The way this application works is by letting the user enter a name of a video, add a url, a rating and a description. The way the video works is by having the user go to the mobile YouTube app, find a video, and specifically go to share and then copy the url. That reason you copy that specific url is because of the way the app splits the string. From there, it can get the embedded YouTube video to load the video and have all the functionality of YouTube, all while your links are stored in a sqlite database that you can add or delete from at any time.</p>
-
-<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
-
-<p>This project was a real interesting journey. At this point of time I had only ever made smaller apps, specifically for Magic The Gathering to track your life, and played around with changing colours. This app had the new challenge of figuring out how sqlite worked in Android and how to use the YouTube api. Sqlite wasn&#39;t a challenge, but getting string values into the database did provide some complications just because it was my first time using databases in Android. The YouTube api was another issue. I needed to read a ton of documentation and even then it just didn&#39;t want to work. Eventually I found the specific way it wanted the string and the api key and from there, everything fell in place. I managed to learn a lot more about Android because of this project and as soon as it was done it opened up a lot more application ideas that I&#39;m able to make, specifically utilizing sqlite databases.</p>
-</div>
-<img alt="Space invaders style Windows Forms game" id="winformGame" src="img/bullethell.png" />
-<div id="winformGameDocumentation">
-<p class="w3-center">Code provided on request</p>
-
-<h3>Summary of the project?</h3>
-
-<p>A bullet hell style game made in Windows Forms with GDI+. One life, bunch of bullets, survive all the waves of enemies.</p>
-
-<h3>What&#39;s the goal?</h3>
-
-<p>The goal of the game is to survive 3 waves of enemies and then a boss wave. You only have the one life, and enemies take a bunch of shots to kill.</p>
-
-<h3>What&#39;s the challenge?</h3>
-
-<p>The goal is to kill all the enemies. The challenge is that each wave gets faster each time, and each wave has a hive mind. They all shoot at the same time, and because you only have one life, things will get more intense than previously thought. You will die very quick if you&#39;re not paying attention. Each death will restart the game.</p>
-
-<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
-
-<p>This kind of thing is my passion. Making games has always been my favourite thing. This was my first take on taking on the Windows Forms, and making a game out of it was a lot of fun, but it wasn&#39;t without its challenges. The issues that are noteworthy were waves that would vanish all at once, enemies that would die all at once, and key presses causing some unneeded issues. When it came to the waves vanishing it was just down to how I was handling waves, and tracking each wave individually fixed that. The issue with bullets was because bullets were done in a hash set, and because the damage was based on the amount of bullets in the hash set. I managed a quick and dirty solution to change the health of the enemies and limiting the bullets to get my initial idea. When it came to the key press issues, it was due to a key down event. The way that my movement worked was on a separate timer. The way my shooting worked was not the same as the movement, which I had set up to make movement smoother. The issue with the way shooting worked was that it would only shoot fast if I wasn&#39;t moving, and then it would spam shots, and then stop if I was moving. I changed the shooting to shoot on key up which limited the speed of shots and made everything work as intended. This project proved a lot more fun than I had originally thought and it helped bring out my game design brain.</p>
-</div>
-<img alt="Pacman made in Unity" id="unityMan" src="img/pacboard.PNG" />
-<div id="unityManDocumentation">
-<p class="w3-center">Code on GitHub is in progress</p>
-
-<h3>Summary of the project?</h3>
-
-<p>Pacman made in Unity, that I&#39;ve dubbed Unityman, made through a tutorial with my own touches added on at the end (tutorial I based this off of was located <a href="https://noobtuts.com/unity/2d-pacman-game">here</a>.)</p>
-
-<h3>What&#39;s the goal?</h3>
-
-<p>The goal is to remake one of the most iconic games, Pacman, and add my own touches to make it look a little more my own.</p>
-
-<h3>What&#39;s the challenge?</h3>
-
-<p>It&#39;s Pacman, which can be a challenge all on its own for some. But it&#39;s also made with a little easier AI that is also faster than need be. The AI&#39;s patterns are also harder to memorize and they can catch you off guard.</p>
-
-<h3>What challenges have I faced making this/What are my takeaways from this?</h3>
-
-<p>Following along with the tutorial walked me through my first delve into Unity as a game engine. As an engine, it&#39;s a lot of fun and easy enough to work with. But also as an engine, there were a few things I did through the tutorial that took a long time. Taking a look at the map, I ended up having to add the colliders all manually. Colliders in Unity are just something that tells the program where collisions can be found. They define the shape, or at least a rough approximation, and are invisible to the player while playing. They are essential for telling where the map is and where each wall is. Setting up all 51 manually caused some issues, specifically with movement.</p>
-
-<p>The colliders need to be roughly even numbers and not decimals that extend in length. So having one be 1.25 is far better than having one that&#39;s 1.2548545 because that was how my original setup was. And every play test had me randomly sticking to the wall as it was velcro, and in one instance, had me sucked into the wall like the corner was a black hole. Another challenge faced could be the pacdots. Each individual pacdot. You don&#39;t need to count as I had to manually add all 328 duplicating the last, editing the size to make it next to the last, and slowly make my way through the maze. But it was a lot of fun as much as it was a challenge. Speaking of pacdots, I did run into an issue where every pacdot would randomly disappear for seemingly no reason, but that boiled down to me grouping every pacdot under the first instead of the board during a cleanup. But past that, no other issues really came to be.</p>
-
-<p>After the tutorial concluded I was left with Pacman, 51 colliders, 328 pacdots, and one ghost. But it did provide a basis for me to add a scoreboard and a game over/win. From there I looked into the documents for Unity and the Unity forms to figure out how to add the score, how to pause a game for when the user wins or loses, and how to restart upon win or loss. At the end, I had a lot of fun with the project and it taught me a lot about Unity as an engine and really solidified making games as my end goal.</p>
-</div>
-</div>
-</div>
-<!-- Third Parallax Image with Portfolio Text -->
-
-<div class="bgimg-4 w3-display-container w3-opacity-min w3-hide-small">
-	<div class="w3-display-middle">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">RESUME</span>
 	</div>
-</div>
-<div class="bgimg-4-mobile w3-orange w3-display-container w3-opacity-min w3-hide-medium w3-hide-large">
-	<div class="w3-display-middle">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">RESUME</span>
+
+	<div class="w3-hide-large w3-hide-medium" id="resumeContentMobile">
+		<h2>Technical Skills</h2>
+
+		<p>Operating Systems:</p>
+
+		<ul id="resumeList">
+			<li>&middot; Windows</li>
+			<br />
+			<li>&middot; Linux</li>
+		</ul>
+
+		<p>Programming:</p>
+
+		<ul id="resumeList">
+			<li>&middot; Java</li>
+			<li>&middot; HTML</li>
+			<br />
+			<li>&middot; Python</li>
+			<li>&middot; C#</li>
+			<br />
+			<li>&middot; C++</li>
+			<li>&middot; JavaScript</li>
+			<br />
+			<li>&middot; GDScript</li>
+		</ul>
+
+		<p>Development Tools:</p>
+
+		<ul id="resumeList">
+			<li>&middot; Unity</li>
+			<li>&middot; Eclipse</li>
+			<br />
+			<li>&middot; Notepad++</li>
+			<li>&middot; WebStorm</li>
+			<br />
+			<li>&middot; IntelliJ</li>
+			<li>&middot; CLion</li>
+			<br />
+			<li>&middot; Godot Game Engine</li>
+		</ul>
+
+		<h2>Formal Education</h2>
+
+		<p>NSCC</p>
+
+		<p><em>Diploma in Software Development</em></p>
+
+		<h2>Current Employment</h2>
+
+		<p>NTT DATA</p>
+
+		<p><em>Software Development Analyst</em></p>
+
+		</div>
+		<!--<img id="resume" src="img/resume.png" alt="My Resume">--></div>
+		<!-- Modal for full size images on click-->
+
+		<div class="w3-modal w3-black" id="modal01" onclick="this.style.display='none'">
+			<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"><img class="w3-image" id="img01" />
+				<p class="w3-opacity w3-large" id="caption"></p>
+			</div>
+		</div>
+		<!-- Fourth Parallax Image with Portfolio Text -->
+
+		<div class="bgimg-3 w3-display-container w3-opacity-min w3-hide-small">
+			<div class="w3-display-middle">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">CONTACT</span>
+			</div>
+		</div>
+		<div class="bgimg-3-mobile w3-purple w3-display-container w3-opacity-min w3-hide-medium w3-hide-large">
+			<div class="w3-display-middle">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">CONTACT</span>
+			</div>
+		</div>
+		<!-- Container (Contact Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="contact">
+			<h3 class="w3-center">WHERE I CAN BE FOUND</h3>
+		<div class="w3-row w3-padding-32 w3-section">
+		<div class="w3-large w3-margin-bottom w3-center" id="contactInfo">Halifax, NS<br />
+			Phone: 902-802-2395<br />
+			Email: sfetinko@gmail.com<br />
+			Github: <a href="https://github.com/stephen-soul">https://github.com/stephen-soul</a></br>
+			LinkedIn: <a href="https://www.linkedin.com/in/stephen-fetinko-2671a1127/">https://www.linkedin.com/in/stephen-fetinko-2671a1127/</a>
+		</div>
 	</div>
-</div>
-<!-- Container (Contact Section) -->
-
-<div class="w3-content w3-container w3-padding-64" id="resumeSection">
-<h3 class="w3-center" id="resumeHeader">HERE&#39;S MY RESUME</h3>
-
-<p id="resumeDownload"><a href="StephenFetinko_Resume.docx">Download as a docx file</a></p>
-
-<div class="w3-hide-small" id="resumeContent">
-<h2>Technical Skills</h2>
-
-<p>Operating Systems:</p>
-
-<ul id="resumeList">
-	<li>&middot; Windows (All versions)</li> 
-	<li>&middot; Linux (Debian/Manjaro)</li>
-</ul>
-
-<p>Development Languages:</p>
-
-<ul id="resumeList">
-	<li>&middot; Java</li>
-	<li>&middot; HTML</li>
-	<li>&middot; Python</li>
-	<li>&middot; C#</li>
-	<li>&middot; C++</li>
-	<li>&middot; JavaScript</li>
-	<li>&middot; GDScript</li>
-</ul>
-
-<p>Development Tools:</p>
-
-<ul id="resumeList">
-	<li>&middot; Unity</li>
-	<li>&middot; Eclipse</li>
-	<li>&middot; Notepad++</li>
-	<li>&middot; WebStorm</li>
-	<li>&middot; IntelliJ</li>
-	<li>&middot; CLion</li>
-	<li>&middot; Godot Game Engine</li>
-</ul>
-
-<h2>Formal Education</h2>
-
-<p>NSCC</p>
-
-<p><em>Diploma in Software Development</em></p>
-
-<h2>Current Employment</h2>
-
-<p>NTT DATA</p>
-
-<p><em>Software Development Analyst</em></p>
-
-</div>
-
-<div class="w3-hide-large w3-hide-medium" id="resumeContentMobile">
-<h2>Technical Skills</h2>
-
-<p>Operating Systems:</p>
-
-<ul id="resumeList">
-	<li>&middot; Windows</li>
-	<br />
-	<li>&middot; Linux</li>
-</ul>
-
-<p>Programming:</p>
-
-<ul id="resumeList">
-	<li>&middot; Java</li>
-	<li>&middot; HTML</li>
-	<br />
-	<li>&middot; Python</li>
-	<li>&middot; C#</li>
-	<br />
-	<li>&middot; C++</li>
-	<li>&middot; JavaScript</li>
-	<br />
-	<li>&middot; GDScript</li>
-</ul>
-
-<p>Development Tools:</p>
-
-<ul id="resumeList">
-	<li>&middot; Unity</li>
-	<li>&middot; Eclipse</li>
-	<br />
-	<li>&middot; Notepad++</li>
-	<li>&middot; WebStorm</li>
-	<br />
-	<li>&middot; IntelliJ</li>
-	<li>&middot; CLion</li>
-	<br />
-	<li>&middot; Godot Game Engine</li>
-</ul>
-
-<h2>Formal Education</h2>
-
-<p>NSCC</p>
-
-<p><em>Diploma in Software Development</em></p>
-
-<h2>Current Employment</h2>
-
-<p>NTT DATA</p>
-
-<p><em>Software Development Analyst</em></p>
-
-</div>
-<!--<img id="resume" src="img/resume.png" alt="My Resume">--></div>
-<!-- Modal for full size images on click-->
-
-<div class="w3-modal w3-black" id="modal01" onclick="this.style.display='none'">
-<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"><img class="w3-image" id="img01" />
-<p class="w3-opacity w3-large" id="caption"></p>
-</div>
-</div>
-<!-- Fourth Parallax Image with Portfolio Text -->
-
-<div class="bgimg-3 w3-display-container w3-opacity-min w3-hide-small">
-	<div class="w3-display-middle">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">CONTACT</span>
-	</div>
-</div>
-<div class="bgimg-3-mobile w3-purple w3-display-container w3-opacity-min w3-hide-medium w3-hide-large">
-	<div class="w3-display-middle">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">CONTACT</span>
-	</div>
-</div>
-<!-- Container (Contact Section) -->
-
-<div class="w3-content w3-container w3-padding-64" id="contact">
-<h3 class="w3-center">WHERE I CAN BE FOUND</h3>
-
-<div class="w3-row w3-padding-32 w3-section">
-<div class="w3-large w3-margin-bottom w3-center" id="contactInfo">Halifax, NS<br />
-Phone: 902-802-2395<br />
-Email: sfetinko@gmail.com<br />
-Github: <a href="https://github.com/stephen-soul">https://github.com/stephen-soul</a></div>
-</div>
 </div>
 <!-- Footer -->
 
